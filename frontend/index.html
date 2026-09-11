@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shubhankar's AI</title>
+
+    <link rel="stylesheet" href="Css.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+
+            <h2>Shubhankar's AI</h2>
+
+            <span>AI Portfolio</span>
+
+        </header>
+
+
+        <!-- Chat Area -->
+        <main class="chat-container">
+
+            <!-- Welcome Screen -->
+            <div id="welcome" class="welcome">
+
+                <h1>Hi, I'm Shubhankar's AI</h1>
+
+                <p>
+                    Ask me anything about Shubhankar.
+                </p>
+
+
+                <div class="suggestions">
+
+                    <button
+                        onclick="askQuestion('Tell me about Shubhankar')">
+                        Tell me about Shubhankar
+                    </button>
+
+
+                    <button
+                        onclick="askQuestion('What are Shubhankar skills?')">
+                        What are his skills?
+                    </button>
+
+
+                    <button
+                        onclick="askQuestion('Tell me about his projects')">
+                        Tell me about his projects
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Messages will appear here -->
+            <div id="messages" class="messages"></div>
+
+        </main>
+
+
+        <!-- Input Area -->
+        <div class="input-area">
+
+            <div class="input-box">
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Ask something about Shubhankar..."
+                    rows="1">
+                </textarea>
+
+
+                <button id="sendButton">
+                    ↑
+                </button>
+
+            </div>
+
+
+            <p>
+                Shubhankar's AI can only answer using provided information.
+            </p>
+
+        </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
