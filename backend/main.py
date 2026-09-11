@@ -1,5 +1,5 @@
 import os
-
+from pathlib import Path
 from dotenv import load_dotenv
 from groq import Groq
 from docx import Document
@@ -21,7 +21,9 @@ model = "openai/gpt-oss-120b"
 
 
 # Read information from DOCX
-document = Document("My self.docx")
+BASE_DIR = Path(__file__).resolve().parent
+
+document = Document(BASE_DIR / "My self.docx")
 
 my_information = "\n".join(
     paragraph.text
